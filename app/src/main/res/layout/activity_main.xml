@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vivardhan.attendance.MainActivity"
+    android:background="#ffffff"
+    style="@style/Base.Widget.AppCompat.Button.Borderless">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select the department"
+        android:id="@+id/textDepartment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#909090"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonECE"
+        android:src="@drawable/ece"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_alignTop="@+id/buttonCSE"
+        android:layout_alignRight="@+id/textDepartment"
+        android:layout_alignEnd="@+id/textDepartment"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="onClick" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonIT"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/it"
+        android:layout_below="@+id/buttonCSE"
+        android:layout_alignLeft="@+id/buttonCSE"
+        android:layout_alignStart="@+id/buttonCSE"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCSE"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/cse"
+        android:onClick="onClick"
+        android:layout_below="@+id/textDepartment"
+        android:layout_toLeftOf="@+id/buttonECE"
+        android:layout_toStartOf="@+id/buttonECE" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMECH"
+        android:src="@drawable/mech"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_below="@+id/buttonECE"
+        android:layout_alignLeft="@+id/buttonECE"
+        android:layout_alignStart="@+id/buttonECE"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEEE"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/eee"
+        android:layout_below="@+id/buttonIT"
+        android:layout_alignLeft="@+id/buttonIT"
+        android:layout_alignStart="@+id/buttonIT"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCIVIL"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/civil"
+        android:layout_alignTop="@+id/buttonEEE"
+        android:layout_toRightOf="@+id/buttonEEE"
+        android:layout_toEndOf="@+id/buttonEEE"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCHEM"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:src="@drawable/chem"
+        android:layout_below="@+id/buttonEEE"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick" />
+</RelativeLayout>
