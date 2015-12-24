@@ -86,6 +86,7 @@ public class EditDetails extends AppCompatActivity implements View.OnClickListen
             }
             clear();
 
+
         }
 
 
